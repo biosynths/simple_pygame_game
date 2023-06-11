@@ -36,9 +36,8 @@ player_y = 650
 is_jump = False
 jump_count = 13
 
-
 bg_sound = pygame.mixer.Sound('./sounds/bg_sound.mp3')
-bg_sound.play()
+bg_sound.play(loops=True)
 
 ghost_timer = pygame.USEREVENT + 1
 pygame.time.set_timer(ghost_timer, 3000)
@@ -108,7 +107,7 @@ while running:
         if bullets:
             for el in bullets:
                 screen.blit(bullet, (el.x, el.y))
-                el.x += 5
+                el.x += 50
 
                 if el.x > right_boarder + 20:
                     bullets.remove(el)
