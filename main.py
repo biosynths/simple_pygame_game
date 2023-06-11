@@ -36,7 +36,6 @@ player_y = 650
 is_jump = False
 jump_count = 13
 
-
 bg_sound = pygame.mixer.Sound('./sounds/bg_sound.mp3')
 bg_sound.play(loops=True)
 
