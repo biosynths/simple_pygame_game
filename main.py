@@ -103,10 +103,6 @@ while running:
                 is_jump = False
                 jump_count = 13
 
-        # if player_anim_count != 2:
-        #     player_anim_count += 1
-        # else:
-        #     player_anim_count = 0
         player_anim_count = (counter // 5) % 3
 
         bg_x -= 5
